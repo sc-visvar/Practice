@@ -3,7 +3,7 @@ FROM node:19-alpine
 
 #Copying application code to the docker container
 COPY package.json /app/
-COPY src /app/
+COPY src/. /app/src/
 
 #Changing to the working directory
 WORKDIR /app
@@ -12,4 +12,4 @@ WORKDIR /app
 RUN npm install
 
 #Running the app
-CMD [ "node", "index.js" ]
+CMD [ "node", "src/index.js" ]
