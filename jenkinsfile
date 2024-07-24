@@ -14,7 +14,7 @@ pipeline {
                 sh '''
                 echo "doing build stuff.."
                 ls
-                pip install pandas numpy
+                pip install pandas
                 '''
             }
         }
