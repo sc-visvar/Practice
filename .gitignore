@@ -22,7 +22,7 @@ coverage
 
 __pycache__/
 *.ipynb_checkpoints/
-
+.pylintrc
 
 # nyc test coverage
 .nyc_output
