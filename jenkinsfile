@@ -14,7 +14,6 @@ pipeline {
                 sh '''
                 echo "doing build stuff.."
                 ls
-                cd Practice
                 pip install pandas numpy
                 '''
             }
@@ -24,7 +23,6 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 echo "doing test stuff.."
-                cd Practice
                 cd shallow_deep_copy_using_oops
                 python3 practice.py
                 '''
